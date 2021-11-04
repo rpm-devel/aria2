@@ -7,7 +7,7 @@ Summary:        High speed download utility with resuming and segmented download
 Group:          Applications/Internet
 License:        GPLv2+ with exceptions
 URL:            http://aria2.github.io/
-Source0:        https://github.com/tatsuhiro-t/%{name}/releases/download/release-%{version}/%{name}-%{version}.tar.xz
+Source0:        https://github.com/aria2/%{name}/releases/download/release-%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  bison
 BuildRequires:  c-ares-devel
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 #make check
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog COPYING README 
+%doc AUTHORS ChangeLog COPYING README
 %{_bindir}/%{binname}
 %{_mandir}/man1/aria2c.1.gz
 %{_mandir}/*/man1/aria2c.1.gz
@@ -269,7 +269,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=2133
 
 * Sat Mar 20 2010 Rahul Sundaram <sundaram@fedoraproject.org> - 1.9.0-1
-- http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1990 
+- http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1990
 
 * Tue Feb 16 2010 Rahul Sundaram <sundaram@fedoraproject.org> - 1.8.2-1
 - Several bug fixes
@@ -278,7 +278,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 * Mon Dec 28 2009 Rahul Sundaram <sundaram@fedoraproject.org> - 1.8.0-1
 - Many new features including XML RPC improvements and other bug fixes
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1778
- 
+
 * Mon Dec 07 2009 Rahul Sundaram <sundaram@fedoraproject.org> - 1.7.1-1
 - Option --bt-prioritize-piece=tail will work again
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1721
@@ -288,7 +288,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1616
 
 * Sat Oct 10 2009 Rahul Sundaram <sundaram@fedoraproject.org> - 1.6.2-1
-- Minor bug fixes and switch XZ compressed source 
+- Minor bug fixes and switch XZ compressed source
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1586
 
 * Thu Oct 08 2009 Rahul Sundaram <sundaram@fedoraproject.org> - 1.6.1-1
@@ -312,7 +312,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 - Fixed the license tag
 
 * Sun Jul 26 2009 Rahul Sundaram <sundaram@fedoraproject.org> - 1.5.0-1
-- Mostly minor bug fixes 
+- Mostly minor bug fixes
 - WEB-Seeding support for multi-file torrent
 - http://aria2.svn.sourceforge.net/viewvc/aria2/trunk/NEWS?revision=1476
 
