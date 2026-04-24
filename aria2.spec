@@ -1,10 +1,9 @@
 %define binname aria2c
 
 Name:           aria2
-Version:        1.34.0
-Release:        2%{?dist}
+Version:        1.37.0
+Release:        1%{?dist}
 Summary:        High speed download utility with resuming and segmented downloading
-Group:          Applications/Internet
 License:        GPLv2+ with exceptions
 URL:            http://aria2.github.io/
 Source0:        https://github.com/aria2/%{name}/releases/download/release-%{version}/%{name}-%{version}.tar.xz
@@ -20,9 +19,6 @@ BuildRequires:  libxml2-devel
 BuildRequires:  make
 BuildRequires:  sqlite-devel
 
-Provides: aria2
-Provides: aria2
-Provides: aria2-devel
 
 %description
 aria2 is a download utility with resuming and segmented downloading.
@@ -86,6 +82,10 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 
 
 %changelog
+* Fri Apr 24 2026 CasjaysDev <rpm-devel@casjaysdev.pro> - 1.37.0-1
+- Update to 1.37.0
+- Modernize spec for EL10
+
 * Thu Jul 12 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.34.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
