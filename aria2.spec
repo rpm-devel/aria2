@@ -1,4 +1,4 @@
-%define binname aria2c
+%global binname aria2c
 
 Name:           aria2
 Version:        1.37.0
@@ -64,8 +64,8 @@ V=1 make %{?_smp_mflags}
 %install
 %make_install
 %find_lang %{name}
-rm -f $RPM_BUILD_ROOT%{_datadir}/locale/locale.alias
-rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
+rm -f %{buildroot}%{_datadir}/locale/locale.alias
+rm -rf %{buildroot}%{_datadir}/doc/%{name}
 
 %check
 # fails atm
@@ -82,6 +82,9 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 
 
 %changelog
+* Fri May 22 2026 CasjaysDev <rpm-devel@casjaysdev.pro> - 1.37.0-1
+- Fix spec violations: %global for constants, use %{buildroot}
+
 * Fri Apr 24 2026 CasjaysDev <rpm-devel@casjaysdev.pro> - 1.37.0-1
 - Update to 1.37.0
 - Modernize spec for EL10
